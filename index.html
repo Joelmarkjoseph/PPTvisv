@@ -29,9 +29,9 @@
     <section>
       <h2>Submit Your Details</h2>
       <form
-        action="mailto:pptvisvotsav@gmail.com"
+        action="mailto:pptvisvotsav@gmail.com?subject=PPT Submission for VISVOTSAV 2024"
         method="post"
-        enctype="text/plain"
+        enctype="multipart/form-data"
       >
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required /><br /><br />
@@ -41,6 +41,15 @@
 
         <label for="class">Class:</label>
         <input type="text" id="class" name="class" required /><br /><br />
+
+        <label for="pptfile">Upload Your PPT:</label>
+        <input
+          type="file"
+          id="pptfile"
+          name="pptfile"
+          accept=".ppt,.pptx"
+          required
+        /><br /><br />
 
         <input type="submit" value="Submit" />
       </form>
