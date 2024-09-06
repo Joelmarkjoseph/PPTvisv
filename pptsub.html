@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h2>Submit Your Details</h2>
+      <form
+        action="mailto:pptvisvotsav@gmail.com?subject=PPT Submission for VISVOTSAV 2024"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="rollno">Roll No:</label>
+        <input type="text" id="rollno" name="rollno" required /><br /><br />
+
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" required /><br /><br />
+
+        <label for="pptfile">Upload Your PPT:</label>
+        <input
+          type="file"
+          id="pptfile"
+          name="pptfile"
+          accept=".ppt,.pptx"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>
